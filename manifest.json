@@ -1,0 +1,15 @@
+{
+  "name": "Distribuye Distrileco · Proleche y Parmalat",
+  "short_name": "Distrileco",
+  "description": "Marcas que distribuye Distrileco Caucasia: videos y pedidos por WhatsApp.",
+  "lang": "es-CO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16408F",
+  "icons": [
+    {"src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}

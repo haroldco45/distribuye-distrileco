@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Distribuye Distrileco · Proleche y Parmalat</title>
+<meta name="description" content="Distrileco Caucasia S.A.S., mayorista desde 1984, distribuye Proleche y Parmalat en Bajo Cauca, Córdoba, Nordeste, Urabá y Sucre. Mire los videos y pida por WhatsApp.">
+<meta name="theme-color" content="#16408F">
+<meta property="og:title" content="Distribuye Distrileco · Proleche y Parmalat">
+<meta property="og:description" content="Mayorista desde 1984 en Caucasia. Leche Proleche, crema de leche Parmalat para su negocio. Pida por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://distribuye-distrileco.netlify.app/">
+<meta property="og:site_name" content="Distrileco">
+<meta property="og:locale" content="es_CO">
+<meta property="og:image" content="https://distribuye-distrileco.netlify.app/img/og.jpg?v=2">
+<meta property="og:image:secure_url" content="https://distribuye-distrileco.netlify.app/img/og.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Distribuye Distrileco: Proleche y Parmalat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://distribuye-distrileco.netlify.app/img/og.jpg?v=2">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#16408F; --azul-osc:#0E2A66; --rojo:#D62027; --oro:#F2A900; --verde:#1E8A3C;
+  --negro:#101828; --gris:#5B6475; --linea:#E3E7EF; --suave:#F3F6FB; --blanco:#fff;
+  --tit:"Poppins",Arial,sans-serif; --txt:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--blanco);color:var(--negro);font:400 17px/1.55 var(--txt);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0)}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oro);outline-offset:2px}
+h1,h2,h3{font-family:var(--tit);line-height:1.05;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(32px,5.6vw,52px);font-weight:800}
+h3{font-size:24px;font-weight:700}
+p{margin:0 0 1em}
+.envase{max-width:1140px;margin:0 auto;padding:0 20px}
+.ceja{font:700 14px var(--tit);letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin:0 0 10px}
+
+/* barra */
+.barra{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linea);padding-top:env(safe-area-inset-top,0)}
+.barra .envase{display:flex;align-items:center;gap:14px;height:64px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
+.marca img{height:44px;width:auto}
+.marca span{font:800 18px var(--tit);color:var(--azul);letter-spacing:.02em}
+.barra nav{margin-left:auto;display:flex;gap:2px}
+.barra nav a{font:600 15px var(--tit);text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--negro)}
+.barra nav a:hover{background:var(--suave);color:var(--azul)}
+.idioma{display:flex;border:1px solid var(--linea);border-radius:999px;overflow:hidden;flex:none}
+.idioma button{border:0;background:none;font:700 13px var(--tit);padding:7px 11px;cursor:pointer;color:var(--gris)}
+.idioma button[aria-pressed="true"]{background:var(--azul);color:#fff}
+@media(max-width:820px){.barra nav{display:none}.idioma{margin-left:auto}}
+
+/* portada */
+.portada{position:relative;min-height:min(92vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--azul-osc)}
+.portada video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,42,102,.92) 0%,rgba(14,42,102,.7) 45%,rgba(14,42,102,.15) 100%),linear-gradient(0deg,rgba(14,42,102,.85) 0%,transparent 40%)}
+.portada .envase{position:relative;z-index:2;padding-top:80px;padding-bottom:56px;width:100%}
+.sello{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:18px;padding:10px 18px 10px 10px;box-shadow:0 10px 30px rgba(0,0,0,.25);margin-bottom:22px}
+.sello img{height:62px;width:auto}
+.sello b{display:block;font:700 13px var(--tit);letter-spacing:.14em;color:var(--rojo)}
+.sello strong{display:block;font:800 22px var(--tit);color:var(--azul);line-height:1}
+.portada h1{font-size:clamp(40px,8vw,84px);font-weight:800;max-width:13ch}
+.portada h1 em{font-style:normal;color:var(--oro)}
+.portada .bajada{font-size:clamp(18px,2.4vw,21px);max-width:46ch;margin:18px 0 26px;color:#E6ECFA}
+.botones{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:999px;font:700 16px var(--tit);text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 8px 20px rgba(214,32,39,.35)}
+.btn-blanco{background:#fff;color:var(--azul)}
+.btn-wa{background:#1FA855;color:#fff;box-shadow:0 8px 20px rgba(31,168,85,.3)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* cinta */
+.cinta{background:var(--rojo);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0}
+.cinta .rueda{display:inline-flex;gap:42px;animation:rodar 26s linear infinite;font:800 20px var(--tit);letter-spacing:.06em;text-transform:uppercase}
+.cinta .rueda span:nth-child(even){color:#FFD8D9}
+@keyframes rodar{to{transform:translateX(-50%)}}
+
+/* marcas */
+.seccion{padding:64px 0}
+.seccion .sub{color:var(--gris);max-width:60ch;margin:12px 0 30px;font-size:18px}
+.marcas{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:860px){.marcas{grid-template-columns:1fr}}
+.tarjeta{position:relative;border-radius:22px;overflow:hidden;background:var(--suave);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.tarjeta:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,24,40,.14)}
+.tarjeta .foto{position:relative;aspect-ratio:16/10;overflow:hidden}
+.tarjeta .foto img{width:100%;height:100%;object-fit:cover;transition:opacity .8s,transform 6s}
+.tarjeta .foto img.b{position:absolute;inset:0;opacity:0}
+.tarjeta:hover .foto img{transform:scale(1.06)}
+.tarjeta .foto img.ver{opacity:1}
+.tarjeta .cuerpo{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.tarjeta .tipo{font:700 13px var(--tit);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.tarjeta p{color:var(--gris);font-size:16px}
+.tarjeta .ver-video{margin-top:auto;align-self:flex-start;font:700 15px var(--tit);background:none;border:0;padding:0;cursor:pointer;color:var(--azul);border-bottom:2px solid currentColor}
+.t-proleche .tipo{color:var(--verde)} .t-parmalat .tipo{color:#1F5FBF}
+
+/* videos */
+.videos{background:var(--azul-osc);color:#fff}
+.videos .ceja{color:var(--oro)}
+.videos .sub{color:#C9D5F2}
+.sala{display:grid;grid-template-columns:1.7fr 1fr;gap:22px;align-items:start}
+@media(max-width:900px){.sala{grid-template-columns:1fr}}
+.pantalla{border-radius:20px;overflow:hidden;background:#000;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.pantalla video{width:100%;aspect-ratio:16/9;background:#000}
+.pantalla .info{background:#0A1F4D;padding:16px 20px}
+.pantalla .info h3{font-size:21px}
+.pantalla .info p{margin:4px 0 0;color:#C9D5F2;font-size:15px}
+.lista{display:grid;gap:12px}
+@media(max-width:900px){.lista{grid-template-columns:repeat(2,1fr)}}
+.item{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;background:rgba(255,255,255,.06);border:2px solid transparent;border-radius:16px;padding:8px;cursor:pointer;text-align:left;color:#fff;font:inherit;transition:background .2s,border-color .2s}
+.item:hover{background:rgba(255,255,255,.12)}
+.item[aria-current="true"]{border-color:var(--oro);background:rgba(242,169,0,.12)}
+.item .mini{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:16/9}
+.item .mini img{width:100%;height:100%;object-fit:cover}
+.item .dur{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.75);font:600 12px var(--tit);padding:2px 6px;border-radius:6px}
+.item b{display:block;font:700 15px var(--tit);line-height:1.2}
+.item small{color:#AFC0E8;font-size:13px}
+@media(max-width:900px){.item{grid-template-columns:1fr}.item .txt{padding:0 4px 4px}}
+.compartir{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.compartir .btn{min-height:44px;font-size:15px;padding:0 20px}
+
+/* quienes */
+.quienes .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.quienes .grid{grid-template-columns:1fr}}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.collage img{border-radius:16px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.collage img:first-child{grid-column:1/-1;aspect-ratio:16/8}
+.datos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 0}
+.dato{background:var(--suave);border-radius:16px;padding:16px}
+.dato strong{display:block;font:800 30px var(--tit);color:var(--azul);line-height:1}
+.dato span{font-size:14px;color:var(--gris)}
+.clientes{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.clientes li{background:#fff;border:1px solid var(--linea);border-radius:999px;padding:6px 14px;font:600 14px var(--tit)}
+
+/* cobertura */
+.cobertura{background:var(--suave)}
+.zonas{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media(max-width:860px){.zonas{grid-template-columns:repeat(2,1fr)}}
+.zona{background:#fff;border-radius:18px;padding:20px;border-top:5px solid var(--azul);transition:transform .2s}
+.zona:hover{transform:translateY(-4px)}
+.zona:nth-child(2){border-color:var(--rojo)} .zona:nth-child(3){border-color:var(--oro)} .zona:nth-child(4){border-color:var(--verde)} .zona:nth-child(5){border-color:#1F5FBF}
+.zona h3{font-size:21px;margin-bottom:6px}
+.zona p{font-size:14px;color:var(--gris);margin:0}
+
+/* pedido */
+.pedido .caja{display:grid;grid-template-columns:1fr 1fr;gap:30px;background:#fff;border:1px solid var(--linea);border-radius:24px;padding:28px;box-shadow:0 14px 40px rgba(16,24,40,.07)}
+@media(max-width:860px){.pedido .caja{grid-template-columns:1fr;padding:20px}}
+.campo{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.campo label,.leyenda{font:700 14px var(--tit)}
+.campo input,.campo select,.campo textarea{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--linea);border-radius:12px;background:#fff;color:var(--negro)}
+.campo textarea{min-height:84px;resize:vertical}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--azul);outline:none}
+.opciones{display:grid;gap:10px;margin:8px 0 16px}
+.opcion{display:flex;gap:12px;align-items:center;border:1.5px solid var(--linea);border-radius:14px;padding:8px;cursor:pointer;transition:border-color .2s,background .2s}
+.opcion:has(input:checked){border-color:var(--azul);background:#EEF3FC}
+.opcion input{width:20px;height:20px;accent-color:var(--azul);flex:none}
+.opcion img{width:72px;height:46px;object-fit:cover;border-radius:8px}
+.opcion b{font:700 15px var(--tit);display:block}
+.opcion small{color:var(--gris)}
+.error{color:var(--rojo);font-weight:700;min-height:1.4em;margin:8px 0}
+.aviso{font-size:13px;color:var(--gris);margin-top:12px}
+
+/* vendedores */
+.vendedores .filtro{max-width:360px;margin-bottom:18px}
+.equipo{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;padding:0;margin:0;list-style:none}
+.equipo li{display:grid;grid-template-columns:46px 1fr;align-items:center;gap:10px 12px;background:var(--suave);border-radius:16px;padding:14px 16px}
+.inicial{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--azul);color:#fff;font:800 17px var(--tit);flex:none}
+.equipo li:nth-child(3n+2) .inicial{background:var(--rojo)} .equipo li:nth-child(3n) .inicial{background:var(--verde)}
+.equipo .nom{font:700 16px var(--tit);line-height:1.2}
+.equipo .tel{font-size:14px;color:var(--gris);white-space:nowrap}
+.equipo .acc{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.equipo .acc a{text-align:center;font:700 14px var(--tit);text-decoration:none;padding:9px 11px;border-radius:999px;background:#fff;border:1px solid var(--linea)}
+.equipo .acc a.wa{background:#1FA855;color:#fff;border-color:#1FA855}
+.vacio{color:var(--gris)}
+
+/* pie */
+footer{background:var(--negro);color:#C7CCD6;padding:40px 0 calc(40px + env(safe-area-inset-bottom,0));font-size:15px}
+footer .fila{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+footer img{height:56px;background:#fff;border-radius:12px;padding:6px}
+footer a{color:#fff}
+footer small{display:block;margin-top:14px;color:#8B93A3}
+
+/* aparecer */
+.aparece{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.aparece.si{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.aparece{opacity:1;transform:none}.cinta .rueda{animation:none}html{scroll-behavior:auto}}
+.flotante{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0));z-index:25;box-shadow:0 10px 26px rgba(0,0,0,.25);opacity:0;pointer-events:none;transform:translateY(20px);transition:opacity .3s,transform .3s}
+.flotante.si{opacity:1;pointer-events:auto;transform:none}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="envase">
+    <a class="marca" href="#inicio" aria-label="Distrileco, inicio"><img src="img/logo-distrileco.png" alt="Logo Distrileco" width="52" height="44"><span>DISTRILECO</span></a>
+    <nav aria-label="Secciones">
+      <a href="#marcas" data-t="nav1">Marcas</a>
+      <a href="#videos" data-t="nav2">Videos</a>
+      <a href="#quienes" data-t="nav3">Quiénes somos</a>
+      <a href="#pedido" data-t="nav4">Pedir</a>
+      <a href="#vendedores" data-t="nav5">Vendedores</a>
+    </nav>
+    <div class="idioma" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="portada">
+    <video src="video/portada.mp4" poster="img/poster-portada.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="envase">
+      <div class="sello"><img src="img/logo-distrileco.png" alt="" width="74" height="62"><div><b data-t="selloA">DISTRIBUYE</b><strong>DISTRILECO</strong></div></div>
+      <h1 data-t="h1" data-html>Lácteos que llegan <em>a su negocio</em></h1>
+      <p class="bajada" data-t="bajada">Proleche y Parmalat, con el respaldo de Distrileco: mayorista de Caucasia desde 1984, surtiendo tiendas y negocios de cinco regiones.</p>
+      <div class="botones">
+        <a class="btn btn-rojo" href="#videos" data-t="b1">Ver los videos</a>
+        <a class="btn btn-blanco" href="#pedido" data-t="b2">Hacer un pedido</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cinta" aria-hidden="true"><div class="rueda" id="rueda"></div></div>
+
+  <section class="seccion" id="marcas">
+    <div class="envase">
+      <p class="ceja aparece" data-t="mCeja">Marcas que distribuimos</p>
+      <h2 class="aparece" data-t="mTit">Dos marcas, un solo pedido</h2>
+      <p class="sub aparece" data-t="mSub">Pídale las dos a su vendedor de Distrileco y le llega junto, con el resto de su surtido.</p>
+      <div class="marcas" id="lista-marcas"></div>
+    </div>
+  </section>
+
+  <section class="seccion videos" id="videos">
+    <div class="envase">
+      <p class="ceja aparece" data-t="vCeja">Videos</p>
+      <h2 class="aparece" data-t="vTit">Mírelos y compártalos</h2>
+      <p class="sub aparece" data-t="vSub">Los comerciales de cada marca con el sello de Distrileco. Toque uno para verlo con sonido.</p>
+      <div class="sala">
+        <div>
+          <div class="pantalla">
+            <video id="reproductor" controls playsinline preload="metadata"></video>
+            <div class="info"><h3 id="v-titulo"></h3><p id="v-texto"></p></div>
+          </div>
+          <div class="compartir">
+            <button class="btn btn-wa" type="button" id="compartir-wa" data-t="compWa">Compartir por WhatsApp</button>
+            <a class="btn btn-blanco" id="descargar" download data-t="desc">Descargar este video</a>
+          </div>
+        </div>
+        <div class="lista" id="lista-videos"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion quienes" id="quienes">
+    <div class="envase grid">
+      <div>
+        <p class="ceja aparece" data-t="qCeja">Quiénes somos</p>
+        <h2 class="aparece" data-t="qTit">Distrileco, el mayorista del Bajo Cauca</h2>
+        <p class="sub aparece" data-t="qP1">Distrileco Caucasia S.A.S. es una distribuidora mayorista con sede en Caucasia, Antioquia. Desde 1984 llevamos las marcas que más se venden hasta la puerta de tiendas, supermercados y negocios de la región.</p>
+        <p class="aparece" data-t="qP2">Nuestros vendedores visitan su negocio, toman el pedido y la mercancía llega en nuestra ruta de despacho. Usted se ocupa de vender; nosotros de tenerle surtido.</p>
+        <ul class="clientes aparece" id="clientes"></ul>
+        <div class="datos aparece">
+          <div class="dato"><strong>1984</strong><span data-t="d1">desde ese año distribuyendo</span></div>
+          <div class="dato"><strong>5</strong><span data-t="d2">regiones con cobertura</span></div>
+          <div class="dato"><strong id="n-vend">11</strong><span data-t="d3">vendedores en ruta</span></div>
+        </div>
+      </div>
+      <div class="collage aparece">
+        <img src="img/proleche-familia.jpg" alt="Familia en el desayuno con leche Proleche" loading="lazy">
+        <img src="img/parmalat-chef.jpg" alt="Chefs, crema de leche Parmalat" loading="lazy">
+        <img src="img/proleche-campo.jpg" alt="Niño con un vaso de leche Proleche" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion cobertura" id="cobertura">
+    <div class="envase">
+      <p class="ceja aparece" data-t="cCeja">Cobertura</p>
+      <h2 class="aparece" data-t="cTit">Llegamos a cinco regiones</h2>
+      <p class="sub aparece" data-t="cSub">Desde la bodega de Caucasia salen las rutas que cubren:</p>
+      <div class="zonas" id="zonas"></div>
+    </div>
+  </section>
+
+  <section class="seccion pedido" id="pedido">
+    <div class="envase">
+      <p class="ceja aparece" data-t="pCeja">Pedido</p>
+      <h2 class="aparece" data-t="pTit">Pida por WhatsApp</h2>
+      <p class="sub aparece" data-t="pSub">Marque las marcas que le interesan, escoja su vendedor y el mensaje se abre listo en WhatsApp.</p>
+      <form class="caja aparece" id="form" novalidate>
+        <div>
+          <span class="leyenda" data-t="pMarcas">¿Qué le interesa?</span>
+          <div class="opciones" id="opciones"></div>
+          <div class="campo"><label for="nota" data-t="pNota">Cantidades o preguntas (opcional)</label><textarea id="nota" data-tph="pNotaPh" placeholder="Ej.: 2 pacas de Proleche y una caja de crema Parmalat"></textarea></div>
+        </div>
+        <div>
+          <div class="campo"><label for="tienda" data-t="pTienda">Nombre de su negocio</label><input id="tienda" autocomplete="organization" data-tph="pTiendaPh" placeholder="Ej.: Tienda La Esperanza"></div>
+          <div class="campo"><label for="municipio" data-t="pMuni">Municipio o barrio</label><input id="municipio" autocomplete="address-level2" data-tph="pMuniPh" placeholder="Ej.: Caucasia, El Palmar"></div>
+          <div class="campo"><label for="vendedor" data-t="pVend">Su vendedor</label><select id="vendedor"><option value="" data-t="pVendOp">Escoja su vendedor</option></select></div>
+          <p class="error" id="error" role="alert"></p>
+          <button class="btn btn-wa" type="submit" style="width:100%" data-t="pEnviar">Enviar pedido por WhatsApp</button>
+          <p class="aviso" data-t="pAviso">Esta página no guarda ni envía sus datos a ningún servidor. El nombre del negocio y el vendedor se recuerdan solo en este celular. Tratamiento de datos según la Ley 1581 de 2012.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="seccion vendedores" id="vendedores">
+    <div class="envase">
+      <p class="ceja aparece" data-t="eCeja">Equipo</p>
+      <h2 class="aparece" data-t="eTit">Nuestros vendedores</h2>
+      <p class="sub aparece" data-t="eSub">Llame o escríbale directo a su vendedor de Distrileco.</p>
+      <div class="campo filtro"><label for="filtro" data-t="eBuscar">Buscar vendedor</label><input id="filtro" type="search" data-tph="eBuscarPh" placeholder="Escriba un nombre"></div>
+      <ul class="equipo" id="equipo"></ul>
+      <p class="vacio" id="vacio" hidden data-t="eVacio">No hay vendedores con ese nombre.</p>
+    </div>
+  </section>
+</main>
+
+<a class="btn btn-rojo flotante" href="#pedido" id="flotante" data-t="flot">Pedir ahora</a>
+
+<footer>
+  <div class="envase">
+    <div class="fila">
+      <img src="img/logo-distrileco.png" alt="Distrileco" width="66" height="56">
+      <div>
+        <strong style="color:#fff">Distrileco Caucasia S.A.S.</strong> · NIT 800183056-9<br>
+        <span data-t="pie1">Caucasia, Antioquia · Desde 1984</span><br>
+        <span data-t="pie2">Bajo Cauca, Córdoba, Nordeste, Urabá y Sucre</span>
+      </div>
+    </div>
+    <small><span data-t="pie3">Proleche y Parmalat son marcas de sus respectivos dueños. Videos de las marcas con el sello de su distribuidor.</span> · <span data-t="pie4">App hecha por</span> <a href="https://wa.me/573117700431" target="_blank" rel="noopener">Vibras Positivas HM</a></small>
+  </div>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const leer=k=>{try{return localStorage.getItem("dd-"+k)||""}catch(e){return""}};
+const guardar=(k,v)=>{try{localStorage.setItem("dd-"+k,v)}catch(e){}};
+
+const VENDEDORES=[
+  ["Alexander Sánchez","3113896080"],["Claudia González","3117253552"],["Danny Troncoso","3137671011"],
+  ["Gleydis Enamorado","3232913136"],["Harold Marín","3117700431"],["Juan Carlos Quintana","3204077185"],
+  ["Juan Carlos Zabala","3232911903"],["Julieth Rodríguez","3135780204"],["Lorenzo Castellar","3113896092"],
+  ["Roy Reyes","3108480777"],["Rubén Abendaño","3148010448"]
+];
+
+const MARCAS=[
+  {id:"proleche",cls:"t-proleche",nombre:"Proleche",fotos:["img/proleche-bolsa.jpg","img/proleche-mascota.jpg","img/proleche-campo.jpg"],video:0,
+   es:{tipo:"Leche",txt:"Leche 100% de origen, de fincas lecheras antioqueñas, con la nueva presentación de 900 ml. La de los desayunos de todos los días."},
+   en:{tipo:"Milk",txt:"100% origin milk from Antioquia dairy farms, in the new 900 ml bag. The everyday breakfast milk."}},
+  {id:"parmalat",cls:"t-parmalat",nombre:"Parmalat",fotos:["img/parmalat-crema.jpg","img/parmalat-chef.jpg","img/parmalat-vaca.jpg"],video:2,
+   es:{tipo:"Crema de leche",txt:"Crema de leche con el contenido de grasa ideal, la que escogen panaderías, reposterías y cocinas."},
+   en:{tipo:"Dairy cream",txt:"Dairy cream with the right fat content, the choice of bakeries, pastry shops and kitchens."}}
+];
+
+const VIDEOS=[
+  {src:"video/proleche-largo.mp4",poster:"img/poster-proleche-largo.jpg",dur:"1:17",
+   es:["Proleche · La tradición","Desayunos, campo antioqueño y la nueva presentación de 900 ml."],
+   en:["Proleche · Tradition","Breakfasts, Antioquia countryside and the new 900 ml bag."]},
+  {src:"video/proleche-corto.mp4",poster:"img/poster-proleche-corto.jpg",dur:"0:30",
+   es:["Proleche · 100% leche de origen","Versión corta, para estados y redes."],
+   en:["Proleche · 100% origin milk","Short version for stories and social media."]},
+  {src:"video/parmalat.mp4",poster:"img/poster-parmalat.jpg",dur:"0:30",
+   es:["Parmalat · Crema de leche","Cremosa y fresca, la de los maestros culinarios."],
+   en:["Parmalat · Dairy cream","Creamy and fresh, the chefs' choice."]}
+];
+
+const ZONAS={
+  es:[["Bajo Cauca","Caucasia y municipios vecinos"],["Córdoba","Sur y centro del departamento"],["Nordeste","Antioqueño"],["Urabá","Antioqueño"],["Sucre","Municipios con ruta"]],
+  en:[["Bajo Cauca","Caucasia and nearby towns"],["Córdoba","South and central department"],["Nordeste","Northeast Antioquia"],["Urabá","Antioquia's Urabá"],["Sucre","Towns on our routes"]]
+};
+const CLIENTES={es:["Tiendas de barrio","Supermercados","Panaderías","Restaurantes","Minimercados"],en:["Corner stores","Supermarkets","Bakeries","Restaurants","Mini-markets"]};
+
+const T={
+ es:{},
+ en:{nav1:"Brands",nav2:"Videos",nav3:"About us",nav4:"Order",nav5:"Sales team",selloA:"DISTRIBUTED BY",
+  h1:"Dairy that reaches <em>your business</em>",
+  bajada:"Proleche and Parmalat, backed by Distrileco: a Caucasia wholesaler since 1984, supplying stores and businesses across five regions.",
+  b1:"Watch the videos",b2:"Place an order",
+  mCeja:"Brands we distribute",mTit:"Two brands, one order",mSub:"Ask your Distrileco sales rep for both and they arrive together with the rest of your stock.",
+  vCeja:"Videos",vTit:"Watch and share",vSub:"Each brand's commercial with the Distrileco seal. Tap one to watch it with sound.",compWa:"Share on WhatsApp",desc:"Download this video",
+  qCeja:"About us",qTit:"Distrileco, the Bajo Cauca wholesaler",
+  qP1:"Distrileco Caucasia S.A.S. is a wholesale distributor based in Caucasia, Antioquia. Since 1984 we have brought the best-selling brands to the door of stores, supermarkets and businesses in the region.",
+  qP2:"Our sales reps visit your business, take the order and the goods arrive on our delivery route. You focus on selling; we keep you stocked.",
+  d1:"distributing since that year",d2:"regions covered",d3:"sales reps on the road",
+  cCeja:"Coverage",cTit:"We reach five regions",cSub:"Our routes leave the Caucasia warehouse and cover:",
+  pCeja:"Order",pTit:"Order on WhatsApp",pSub:"Check the brands you want, choose your sales rep and the message opens ready in WhatsApp.",
+  pMarcas:"What are you interested in?",pNota:"Quantities or questions (optional)",pNotaPh:"E.g.: 2 packs of Proleche and a box of Parmalat cream",
+  pTienda:"Business name",pTiendaPh:"E.g.: La Esperanza Store",pMuni:"Town or neighborhood",pMuniPh:"E.g.: Caucasia, El Palmar",pVend:"Your sales rep",pVendOp:"Choose your sales rep",
+  pEnviar:"Send order on WhatsApp",pAviso:"This page does not store or send your data to any server. Your business name and sales rep are remembered only on this phone. Data handled under Colombian Law 1581 of 2012.",
+  eCeja:"Team",eTit:"Our sales team",eSub:"Call or message your Distrileco sales rep directly.",eBuscar:"Find a sales rep",eBuscarPh:"Type a name",eVacio:"No sales rep with that name.",
+  flot:"Order now",pie1:"Caucasia, Antioquia · Since 1984",pie2:"Bajo Cauca, Córdoba, Nordeste, Urabá and Sucre",
+  pie3:"Proleche and Parmalat are trademarks of their respective owners. Brand videos carry their distributor's seal.",pie4:"App made by",
+  call:"Call",errTienda:"Write your business name so the sales rep knows who the order is from.",errVend:"Choose your sales rep to send the order.",errMarca:"Check at least one brand.",
+  msgHola:"Hello",msgPedido:"I want to order from Distrileco:",msgTienda:"Business",msgMuni:"Town/neighborhood",msgNota:"Note",
+  share:"Look at this video from Distrileco:",cinta:["Proleche","Parmalat","Distributed by Distrileco","Since 1984"]}
+};
+document.querySelectorAll("[data-t]").forEach(e=>T.es[e.dataset.t]=e.dataset.html!==undefined?e.innerHTML:e.textContent);
+document.querySelectorAll("[data-tph]").forEach(e=>T.es[e.dataset.tph]=e.placeholder);
+Object.assign(T.es,{call:"Llamar",errTienda:"Escriba el nombre de su negocio para que el vendedor sepa de quién es el pedido.",errVend:"Escoja su vendedor para enviarle el pedido.",errMarca:"Marque por lo menos una marca.",
+  msgHola:"Hola",msgPedido:"Quiero hacer un pedido a Distrileco:",msgTienda:"Negocio",msgMuni:"Municipio/barrio",msgNota:"Nota",
+  share:"Mire este video de Distrileco:",cinta:["Proleche","Parmalat","Distribuye Distrileco","Desde 1984"]});
+
+let L=leer("lang")||"es", actual=0;
+const fmt=t=>t.replace(/(\d{3})(\d{3})(\d{4})/,"$1 $2 $3");
+
+function pintar(){
+  document.documentElement.lang=L;
+  document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===L));
+  document.querySelectorAll("[data-t]").forEach(e=>{const v=T[L][e.dataset.t];if(v===undefined)return;e.dataset.html!==undefined?e.innerHTML=v:e.textContent=v});
+  document.querySelectorAll("[data-tph]").forEach(e=>e.placeholder=T[L][e.dataset.tph]);
+  const c=T[L].cinta; $("#rueda").innerHTML=[...c,...c,...c,...c].map(x=>`<span>${x}</span>`).join("");
+  $("#lista-marcas").innerHTML=MARCAS.map((m,i)=>`
+    <article class="tarjeta ${m.cls} aparece si">
+      <div class="foto">${m.fotos.map((f,j)=>`<img src="${f}" alt="${m.nombre}" loading="lazy" class="${j?"b":"b ver"}" style="${j?"":"position:relative"}">`).join("")}</div>
+      <div class="cuerpo"><div class="tipo">${m[L].tipo}</div><h3>${m.nombre}</h3><p>${m[L].txt}</p>
+      <button class="ver-video" type="button" data-v="${m.video}">${L==="es"?"Ver el video":"Watch the video"}</button></div>
+    </article>`).join("");
+  $("#lista-videos").innerHTML=VIDEOS.map((v,i)=>`
+    <button class="item" type="button" data-v="${i}" aria-current="${i===actual}">
+      <span class="mini"><img src="${v.poster}" alt="" loading="lazy"><span class="dur">${v.dur}</span></span>
+      <span class="txt"><b>${v[L][0]}</b><small>${v[L][1]}</small></span>
+    </button>`).join("");
+  $("#v-titulo").textContent=VIDEOS[actual][L][0]; $("#v-texto").textContent=VIDEOS[actual][L][1];
+  $("#zonas").innerHTML=ZONAS[L].map(([a,b])=>`<div class="zona aparece si"><h3>${a}</h3><p>${b}</p></div>`).join("");
+  $("#clientes").innerHTML=CLIENTES[L].map(x=>`<li>${x}</li>`).join("");
+  const sel=$("#opciones").querySelectorAll("input:checked"); const marcadas=[...sel].map(x=>x.value);
+  $("#opciones").innerHTML=MARCAS.map(m=>`<label class="opcion"><input type="checkbox" value="${m.id}" ${marcadas.includes(m.id)?"checked":""}><img src="${m.fotos[0]}" alt=""><span><b>${m.nombre}</b><small>${m[L].tipo}</small></span></label>`).join("");
+  pintarEquipo();
+}
+
+function ponerVideo(i,play){
+  actual=i; const v=VIDEOS[i], r=$("#reproductor");
+  r.src=v.src; r.poster=v.poster; $("#descargar").href=v.src;
+  $("#descargar").setAttribute("download","Distrileco-"+v.src.split("/").pop());
+  $("#v-titulo").textContent=v[L][0]; $("#v-texto").textContent=v[L][1];
+  document.querySelectorAll(".item").forEach(b=>b.setAttribute("aria-current",+b.dataset.v===i));
+  if(play){r.play().catch(()=>{})}
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-v]"); if(!b)return;
+  ponerVideo(+b.dataset.v,true);
+  if(b.classList.contains("ver-video")) $("#videos").scrollIntoView({behavior:"smooth"});
+});
+$("#compartir-wa").addEventListener("click",()=>{
+  const v=VIDEOS[actual], url=new URL(v.src,location.href).href;
+  const txt=`${T[L].share} ${v[L][0]}\n${url}\n\n${location.origin+location.pathname}`;
+  window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank","noopener");
+});
+
+function pintarEquipo(){
+  const q=($("#filtro").value||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  const lista=VENDEDORES.filter(([n])=>n.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").includes(q));
+  $("#equipo").innerHTML=lista.map(([n,t])=>{const ini=n.split(" ").map(x=>x[0]).slice(0,2).join("");
+    const saludo=encodeURIComponent(`${T[L].msgHola} ${n.split(" ")[0]}, ${L==="es"?"quiero información de Proleche y Parmalat.":"I'd like information about Proleche and Parmalat."}`);
+    return `<li><span class="inicial">${ini}</span><div><div class="nom">${n}</div><div class="tel">${fmt(t)}</div></div>
+    <div class="acc"><a href="tel:+57${t}">${T[L].call}</a><a class="wa" href="https://wa.me/57${t}?text=${saludo}" target="_blank" rel="noopener">WhatsApp</a></div></li>`}).join("");
+  $("#vacio").hidden=lista.length>0;
+}
+$("#filtro").addEventListener("input",pintarEquipo);
+$("#vendedor").insertAdjacentHTML("beforeend",VENDEDORES.map(([n],i)=>`<option value="${i}">${n}</option>`).join(""));
+$("#n-vend").textContent=VENDEDORES.length;
+
+$("#form").addEventListener("submit",e=>{
+  e.preventDefault(); const err=$("#error"); err.textContent="";
+  const marcas=[...document.querySelectorAll("#opciones input:checked")].map(x=>MARCAS.find(m=>m.id===x.value));
+  const tienda=$("#tienda").value.trim(), muni=$("#municipio").value.trim(), nota=$("#nota").value.trim(), vi=$("#vendedor").value;
+  if(!marcas.length){err.textContent=T[L].errMarca;return}
+  if(!tienda){err.textContent=T[L].errTienda;$("#tienda").focus();return}
+  if(vi===""){err.textContent=T[L].errVend;$("#vendedor").focus();return}
+  const [nom,tel]=VENDEDORES[+vi]; guardar("tienda",tienda);guardar("municipio",muni);guardar("vendedor",vi);
+  let m=`${T[L].msgHola} ${nom.split(" ")[0]}, ${T[L].msgPedido}\n`+marcas.map(x=>`- ${x.nombre} (${x[L].tipo})`).join("\n");
+  if(nota)m+=`\n${T[L].msgNota}: ${nota}`;
+  m+=`\n\n${T[L].msgTienda}: ${tienda}`; if(muni)m+=`\n${T[L].msgMuni}: ${muni}`;
+  window.open(`https://wa.me/57${tel}?text=${encodeURIComponent(m)}`,"_blank","noopener");
+});
+
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{L=b.dataset.lang;guardar("lang",L);pintar()}));
+
+/* fotos que rotan en las tarjetas */
+setInterval(()=>{document.querySelectorAll(".tarjeta .foto").forEach(f=>{const im=f.querySelectorAll("img");if(im.length<2)return;
+  const i=[...im].findIndex(x=>x.classList.contains("ver"));im[i].classList.remove("ver");im[(i+1)%im.length].classList.add("ver")})},3500);
+
+/* aparecer al bajar */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("si");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".aparece:not(.si)").forEach(e=>io.observe(e));
+const fl=new IntersectionObserver(([x])=>$("#flotante").classList.toggle("si",!x.isIntersecting&&!pedidoVisible),{threshold:0});
+let pedidoVisible=false;
+new IntersectionObserver(([x])=>{pedidoVisible=x.isIntersecting;if(x.isIntersecting)$("#flotante").classList.remove("si")}).observe($("#pedido"));
+fl.observe($(".portada"));
+
+pintar(); ponerVideo(0,false);
+$("#tienda").value=leer("tienda"); $("#municipio").value=leer("municipio");
+const vg=leer("vendedor"); if(vg!==""&&VENDEDORES[+vg]) $("#vendedor").value=vg;
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>
